@@ -31,37 +31,37 @@ const suggestionCategories = [
 const portfolioInfo: Record<string, PortfolioSection> = {
   about: {
     description:
-      "I'm a Full Stack Developer specializing in modern web technologies, passionate about creating beautiful and performant web applications.",
+      "I'm Ritesh Bonthalakoti — an Electronics & Communication Engineering graduate from Visakhapatnam, India. I build at the intersection of AI, embedded hardware, and full-stack development. Currently an Embedded Software Engineer at Dharanova Pvt Ltd, I work on systems that bridge the physical and digital world — from ESP32 firmware to DistilBERT-powered enterprise platforms.",
     progress: 95,
-    tags: ["Full Stack", "Web Dev", "UI/UX"],
-    title: "About Me",
+    tags: ["ECE Graduate", "AI Engineer", "Embedded Systems", "Visakhapatnam"],
+    title: "About Ritesh",
   },
   contact: {
     description:
-      "Available for freelance and full-time opportunities. Let's discuss how I can help with your project.",
+      "Open to internships, collaborations, and project opportunities. Reach me at bonthalamadhavi1@gmail.com or connect on LinkedIn (ritesh1908) and GitHub (riteshbonthalakoti). Based in Visakhapatnam, India — available for remote work.",
     progress: 100,
-    tags: ["Freelance", "Full-time", "Remote"],
+    tags: ["Open to Work", "Remote-friendly", "Internships"],
     title: "Contact",
   },
   experience: {
     description:
-      "5+ years of experience in web development, working with startups and enterprise clients to deliver high-quality solutions.",
+      "Currently at Dharanova Pvt Ltd (Embedded Software Engineer, Aug 2026–Present). Previously: Gratian Technologies (Embedded Intern), PUSULA International (AI & Hardware Engineer), LearnDepth LLP (Project Lead & ML Mentor), and Infosys Springboard 6.0 (built Helpdesk.ai). Also served as Head of Operations at Wission Axis.",
     progress: 90,
-    tags: ["Leadership", "Agile", "Team Work"],
-    title: "Experience",
+    tags: ["Dharanova", "Infosys", "PUSULA", "LearnDepth"],
+    title: "Professional Experience",
   },
   projects: {
     description:
-      "Portfolio of diverse projects including e-commerce platforms, SaaS applications, and interactive web experiences.",
+      "Flagship projects include Helpdesk.ai — an enterprise B2B IT support platform with DistilBERT ticket triage and Gemini auto-resolution (Infosys Springboard); and SHEM — a Smart Home Energy Manager using ESP32 + Gemini AI that won 1st Prize (₹10,000). Also built RaceXplorer (1st Prize at district expo), Notiflow, and IoT home automation systems.",
     progress: 92,
-    tags: ["Portfolio", "Case Studies", "Live Demos"],
+    tags: ["Helpdesk.ai", "SHEM", "RaceXplorer", "IoT"],
     title: "Projects",
   },
   skills: {
     description:
-      "Proficient in React, Next.js, Node.js, TypeScript, and modern web development practices. Strong focus on performance and user experience.",
+      "AI/ML: Python, TensorFlow, DistilBERT, AutoML, LLMs, RAG, AI Agents. Embedded & IoT: ESP32, Arduino, Embedded C, MQTT, Edge ML, PCB Design, Verilog HDL. Full-Stack: React, Next.js, FastAPI, Node.js, Supabase, PostgreSQL, TypeScript. Tools: Git, Docker, Linux, Claude Code, Vercel, Arduino IDE.",
     progress: 88,
-    tags: ["React", "Next.js", "Node.js", "TypeScript"],
+    tags: ["ESP32", "Python", "React", "FastAPI", "Arduino"],
     title: "Technical Skills",
   },
 };

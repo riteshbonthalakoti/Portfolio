@@ -1,8 +1,24 @@
 export const experienceData = [
   {
+    role: "Embedded Software Engineer",
+    company: "Dharanova Pvt Ltd",
+    period: "Aug 2026 – Present",
+    location: "Visakhapatnam (On-site)",
+    description:
+      "Developing embedded software solutions at Dharanova — working across firmware design, hardware-software integration, and intelligent system development for real-world applications.",
+    achievements: [
+      "Designing and implementing embedded firmware for product-grade hardware systems",
+      "Collaborating with the engineering team on end-to-end embedded software development",
+      "Building intelligent embedded features integrating AI workflows into hardware pipelines",
+    ],
+    skills: ["Embedded C", "Firmware Development", "IoT", "Hardware Integration", "Python"],
+    color: "bg-[#111111]",
+    progress: 100,
+  },
+  {
     role: "Embedded System Engineer Intern",
     company: "Gratian Technologies",
-    period: "May 2026 – Present",
+    period: "May 2026 – Jul 2026",
     location: "Visakhapatnam (On-site)",
     description:
       "Bridging the gap between hardware and software by developing integrated embedded solutions. Working with the latest Arduino hardware iterations and modern AI-assisted development workflows to architect next-gen IoT systems.",
@@ -18,7 +34,7 @@ export const experienceData = [
   {
     role: "AI & Hardware Engineer",
     company: "PUSULA International Pvt Ltd",
-    period: "Jul 2025 – Present",
+    period: "Jul 2025 – Jul 2026",
     location: "Remote",
     description:
       "Contributing to core AI automation solutions at PUSULA — combining embedded hardware (ESP32), edge ML models, and IoT pipelines in a production engineering environment.",
@@ -34,7 +50,7 @@ export const experienceData = [
   {
     role: "Project Lead & ML Mentor",
     company: "LearnDepth LLP",
-    period: "Mar 2026 – Present",
+    period: "Mar 2026 – Jul 2026",
     location: "Remote",
     description:
       "Leading development of AutoML — an end-to-end pipeline automation system that eliminates manual ML workflow steps from data preprocessing to model deployment. Mentoring junior developers on ML best practices.",

@@ -30,7 +30,7 @@ export const projects: Project[] = [
       "Vercel",
       "Hugging Face",
     ],
-    githubUrl: "https://github.com/ritesh-1918/HELPDESK.AI",
+    githubUrl: "https://github.com/riteshbonthalakoti/HELPDESK.AI",
     demoUrl: "https://helpdeskaiv1.vercel.app",
     screenshots: [
       "/images/landing.png",
@@ -49,8 +49,8 @@ export const projects: Project[] = [
     },
     youtubeId: "Bj00LzeMylM",
     links: {
-      presentation: "https://ritesh-1918.github.io/HELPDESK.AI/",
-      apk: "https://github.com/ritesh-1918/HELPDESK.AI/raw/main/MobileApp/application-2d277b36-4dbd-41c8-806d-cb2f19acf38a.apk"
+      presentation: "https://riteshbonthalakoti.github.io/HELPDESK.AI/",
+      apk: "https://github.com/riteshbonthalakoti/HELPDESK.AI/raw/main/MobileApp/application-2d277b36-4dbd-41c8-806d-cb2f19acf38a.apk"
     },
   },
   {
@@ -68,7 +68,7 @@ export const projects: Project[] = [
       "Cross-platform iOS and Android support",
     ],
     techStack: ["React Native", "Expo", "Node.js", "Supabase"],
-    githubUrl: "https://github.com/ritesh-1918",
+    githubUrl: "https://github.com/riteshbonthalakoti",
     demoUrl: "",
     screenshots: [
       "https://images.unsplash.com/photo-1678329885843-eeb5a6fcfce5?q=80&w=2428&auto=format&fit=crop",
@@ -113,7 +113,7 @@ export const projects: Project[] = [
       "Blynk 2.0",
       "PostgreSQL",
     ],
-    githubUrl: "https://github.com/ritesh-1918/SHEM",
+    githubUrl: "https://github.com/riteshbonthalakoti/SHEM",
     demoUrl: "https://shem1918.vercel.app/",
     screenshots: [
       "/images/shem/main-thumbnail.jpg",
@@ -159,7 +159,7 @@ export const projects: Project[] = [
       "I2C LCD",
       "Buzzer Module",
     ],
-    githubUrl: "https://github.com/ritesh-1918/RaceXplorer",
+    githubUrl: "https://github.com/riteshbonthalakoti/RaceXplorer",
     demoUrl: "",
     screenshots: [
       "/images/racexplorer/device-top.png",
@@ -196,7 +196,7 @@ export const projects: Project[] = [
       "MQTT-based messaging protocol",
     ],
     techStack: ["ESP8266", "Embedded C", "MQTT", "Arduino IDE", "Python"],
-    githubUrl: "https://github.com/ritesh-1918",
+    githubUrl: "https://github.com/riteshbonthalakoti",
     demoUrl: "",
     screenshots: [
       "https://images.unsplash.com/photo-1674027392842-29f8354e236c?q=80&w=2232&auto=format&fit=crop",
@@ -229,7 +229,7 @@ export const projects: Project[] = [
       "LCD display for user prompts",
     ],
     techStack: ["Arduino", "Embedded C", "Servo Motor", "LCD", "Keypad"],
-    githubUrl: "https://github.com/ritesh-1918",
+    githubUrl: "https://github.com/riteshbonthalakoti",
     demoUrl: "",
     screenshots: [
       "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2832&auto=format&fit=crop",
