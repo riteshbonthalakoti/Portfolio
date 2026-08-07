@@ -21,17 +21,9 @@ import { Input } from "@/components/ui/input";
 import { blogPosts } from "@/data/blog-posts";
 import { NewsletterBox } from "@/components/NewsletterBox";
 
-// Sample tags - replace with your actual tags
-const tags = [
-  "Web Development",
-  "UI/UX",
-  "AI/ML",
-  "DevOps",
-  "Cloud Computing",
-  "Cybersecurity",
-  "Mobile Development",
-  "Blockchain",
-];
+const tags = Array.from(
+  new Set(blogPosts.flatMap((post) => post.tags))
+);
 
 export default function BlogPage() {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -239,12 +231,15 @@ export default function BlogPage() {
         </section>
       )}
 
-      {/* All Posts Grid */}
+      {/* All Posts Grid — shows when search/tags are active */}
+      {(selectedTags.length > 0 || searchQuery !== "") && (
       <section className="py-10">
         <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold font-grotesk mb-8">
+            Search Results ({filteredPosts.length})
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts
-              .filter((post) => !post.featured)
               .map((post, index) => (
                 <motion.div
                   key={post.slug}
@@ -309,6 +304,7 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+      )}
 
       {/* Newsletter */}
       <section className="py-10">

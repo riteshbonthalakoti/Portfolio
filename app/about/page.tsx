@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Github,
   Brain,
@@ -317,16 +318,20 @@ export default function AboutPage() {
                   together.
                 </p>
                 <div className="flex gap-4 justify-center">
-                  <Button className="bg-primary/90 hover:bg-primary" size="lg">
-                    Get in Touch
-                  </Button>
-                  <Button
-                    className="border-primary/20 hover:bg-primary/10"
-                    size="lg"
-                    variant="secondary"
-                  >
-                    View Portfolio
-                  </Button>
+                  <Link href="/contact">
+                    <Button className="bg-primary/90 hover:bg-primary" size="lg">
+                      Get in Touch
+                    </Button>
+                  </Link>
+                  <Link href="/projects">
+                    <Button
+                      className="border-primary/20 hover:bg-primary/10"
+                      size="lg"
+                      variant="secondary"
+                    >
+                      View Portfolio
+                    </Button>
+                  </Link>
                 </div>
               </motion.div>
 

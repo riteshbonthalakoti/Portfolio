@@ -25,8 +25,8 @@ export const siteConfig = {
   socials: {
     github: "https://github.com/riteshbonthalakoti",
     instagram: "https://instagram.com/riteshbonthalakoti",
-    linkedin: "https://linkedin.com/in/ritesh1908",
-    email: "mailto:bonthalamadhavi1@gmail.com",
+    linkedin: "https://linkedin.com/in/riteshbonthalakoti",
+    email: "mailto:riteshbonthalakoti@gmail.com",
     substack: "https://ritesh1918.substack.com",
   },
   hero: {
@@ -134,9 +134,9 @@ export const siteConfig = {
     socialLinks: {
       github: "https://github.com/riteshbonthalakoti",
       instagram: "https://instagram.com/riteshbonthalakoti",
-      linkedin: "https://linkedin.com/in/ritesh1908",
+      linkedin: "https://linkedin.com/in/riteshbonthalakoti",
       substack: "https://ritesh1918.substack.com",
-      email: "mailto:bonthalamadhavi1@gmail.com",
+      email: "mailto:riteshbonthalakoti@gmail.com",
     },
   },
   footer: {

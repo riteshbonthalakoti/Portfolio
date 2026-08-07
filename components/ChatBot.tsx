@@ -38,7 +38,7 @@ const portfolioInfo: Record<string, PortfolioSection> = {
   },
   contact: {
     description:
-      "Open to internships, collaborations, and project opportunities. Reach me at bonthalamadhavi1@gmail.com or connect on LinkedIn (ritesh1908) and GitHub (riteshbonthalakoti). Based in Visakhapatnam, India — available for remote work.",
+      "Open to internships, collaborations, and project opportunities. Reach me at riteshbonthalakoti@gmail.com or connect on LinkedIn (riteshbonthalakoti) and GitHub (riteshbonthalakoti). Based in Visakhapatnam, India — available for remote work.",
     progress: 100,
     tags: ["Open to Work", "Remote-friendly", "Internships"],
     title: "Contact",

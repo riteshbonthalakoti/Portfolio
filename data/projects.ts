@@ -83,7 +83,78 @@ export const projects: Project[] = [
     },
   },
 
+  {
+    slug: "focusmate",
+    title: "Focusmate – Daily Task Tracker",
+    description:
+      "Android productivity app for tracking daily tasks and building habits — helping users stay focused and accountable with a clean, minimal interface.",
+    image:
+      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2400&auto=format&fit=crop",
+    category: "Software Solutions",
+    features: [
+      "Daily task creation and management",
+      "Habit tracking with streak counters",
+      "Priority-based task organisation",
+      "Local notifications for task reminders",
+      "Progress visualisation with daily/weekly stats",
+      "Offline-first architecture with local persistence",
+      "Clean minimal UI with dark mode support",
+      "MVVM architecture for maintainability",
+    ],
+    techStack: ["Android", "Kotlin", "XML Layouts", "Room Database", "WorkManager"],
+    githubUrl: "https://github.com/riteshbonthalakoti",
+    demoUrl: "",
+    screenshots: [
+      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2400&auto=format&fit=crop",
+    ],
+    content: {
+      overview:
+        "Focusmate is an Android productivity application that helps users track their daily tasks and build consistent habits. Built with a focus on simplicity, it provides task management, habit streaks, and progress visualisation to keep users accountable and motivated throughout the day.",
+      challenges:
+        "Designing an intuitive UX that remains simple without sacrificing feature completeness, and ensuring reliable local notifications across different Android versions.",
+      solutions:
+        "Used Android WorkManager for reliable background task scheduling and implemented a clean MVVM architecture with Room Database for persistent local storage that works fully offline.",
+      results:
+        "A fully functional Android application that helps users manage their daily workload and track long-term habit formation without requiring internet connectivity.",
+    },
+  },
+
   // ─── HARDWARE / IoT PROJECTS ──────────────────────────────────
+  {
+    slug: "dhwanix",
+    title: "Dhwanix – Noise Pollution Monitor",
+    description:
+      "IoT-based real-time noise pollution monitoring system for hospitals and schools — measuring decibel levels with threshold alerts to protect quiet-zone environments.",
+    image:
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2400&auto=format&fit=crop",
+    category: "Hardware Solutions",
+    features: [
+      "Real-time decibel level measurement via sound sensor",
+      "Configurable threshold-based alert system",
+      "I2C LCD display for on-site noise level readout",
+      "Buzzer and LED feedback for threshold violations",
+      "Wi-Fi data logging for trend analysis",
+      "Moving-average filtering to ignore transient spikes",
+      "Compact, portable enclosure for quick deployment",
+      "Designed for hospitals, schools, and libraries",
+    ],
+    techStack: ["ESP32", "Sound Sensor Module", "Embedded C", "MQTT", "Arduino IDE", "I2C LCD"],
+    githubUrl: "https://github.com/riteshbonthalakoti",
+    demoUrl: "",
+    screenshots: [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2400&auto=format&fit=crop",
+    ],
+    content: {
+      overview:
+        "Dhwanix is an IoT-based noise pollution monitoring system designed for sound-sensitive environments like hospitals and schools. It measures ambient decibel levels in real-time using a calibrated sound sensor connected to an ESP32, triggers alerts when levels exceed defined thresholds, and logs data for historical noise trend analysis.",
+      challenges:
+        "Accurately distinguishing transient noise spikes from sustained noise violations, and calibrating the sensor for different environmental acoustic profiles.",
+      solutions:
+        "Implemented a moving-average algorithm on the ESP32 firmware to filter transient spikes, with configurable threshold levels and an MQTT pipeline for remote monitoring.",
+      results:
+        "Deployed as a working prototype demonstrating real-time noise monitoring with alert capabilities for quiet-zone enforcement in educational and medical environments.",
+    },
+  },
   {
     slug: "shem",
     title: "SHEM – Smart Home Energy Manager",

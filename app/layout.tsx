@@ -122,7 +122,7 @@ export default function RootLayout({
                   },
                   sameAs: [
                     "https://github.com/riteshbonthalakoti",
-                    "https://linkedin.com/in/ritesh1908",
+                    "https://linkedin.com/in/riteshbonthalakoti",
                     "https://instagram.com/riteshbonthalakoti",
                     "https://ritesh1918.substack.com",
                   ],

@@ -47,7 +47,7 @@ export const blogPosts: BlogPost[] = [
       social: {
         twitter: "https://twitter.com/ritesh_1918",
         github: "https://github.com/riteshbonthalakoti",
-        linkedin: "https://linkedin.com/in/ritesh1908",
+        linkedin: "https://linkedin.com/in/riteshbonthalakoti",
       },
     },
     views: 1240,
@@ -101,7 +101,7 @@ export const blogPosts: BlogPost[] = [
       social: {
         twitter: "https://twitter.com/ritesh_1918",
         github: "https://github.com/riteshbonthalakoti",
-        linkedin: "https://linkedin.com/in/ritesh1908",
+        linkedin: "https://linkedin.com/in/riteshbonthalakoti",
       },
     },
     views: 3420,
