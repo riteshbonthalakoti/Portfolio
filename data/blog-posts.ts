@@ -46,8 +46,8 @@ export const blogPosts: BlogPost[] = [
       bio: "Building at the intersection of AI, embedded hardware, and full-stack development.",
       social: {
         twitter: "https://twitter.com/ritesh_1918",
-        github: "https://github.com/ritesh-1918",
-        linkedin: "https://linkedin.com/in/ritesh1908",
+        github: "https://github.com/riteshbonthalakoti",
+        linkedin: "https://linkedin.com/in/riteshbonthalakoti",
       },
     },
     views: 1240,
@@ -100,8 +100,8 @@ export const blogPosts: BlogPost[] = [
       bio: "Building at the intersection of AI, embedded hardware, and full-stack development.",
       social: {
         twitter: "https://twitter.com/ritesh_1918",
-        github: "https://github.com/ritesh-1918",
-        linkedin: "https://linkedin.com/in/ritesh1908",
+        github: "https://github.com/riteshbonthalakoti",
+        linkedin: "https://linkedin.com/in/riteshbonthalakoti",
       },
     },
     views: 3420,

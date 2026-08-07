@@ -23,10 +23,10 @@ export const siteConfig = {
   creator: "Ritesh Bonthalakoti",
   themeColor: "#000000",
   socials: {
-    github: "https://github.com/ritesh-1918",
-    instagram: "https://instagram.com/ritesh_19180",
-    linkedin: "https://linkedin.com/in/ritesh1908",
-    email: "mailto:bonthalamadhavi1@gmail.com",
+    github: "https://github.com/riteshbonthalakoti",
+    instagram: "https://instagram.com/riteshbonthalakoti",
+    linkedin: "https://linkedin.com/in/riteshbonthalakoti",
+    email: "mailto:riteshbonthalakoti@gmail.com",
     substack: "https://ritesh1918.substack.com",
   },
   hero: {
@@ -81,7 +81,7 @@ export const siteConfig = {
     ],
     quickInfo: [
       { label: "Location", value: "Visakhapatnam, India" },
-      { label: "Currently", value: "Diploma in ECE (Final Year)" },
+      { label: "Currently", value: "Diploma in ECE (Completed, 2026)" },
       { label: "Goal", value: "Semiconductor Industry (Nvidia/AMD/Intel)" },
       { label: "Availability", value: "Open to Work" },
     ],
@@ -130,12 +130,13 @@ export const siteConfig = {
     description:
       "Have a project in mind? Let's build something remarkable together.",
     cta: "Send Message",
+    phone: "+91 84649 31322",
     socialLinks: {
-      github: "https://github.com/ritesh-1918",
-      instagram: "https://instagram.com/ritesh_19180",
-      linkedin: "https://linkedin.com/in/ritesh1908",
+      github: "https://github.com/riteshbonthalakoti",
+      instagram: "https://instagram.com/riteshbonthalakoti",
+      linkedin: "https://linkedin.com/in/riteshbonthalakoti",
       substack: "https://ritesh1918.substack.com",
-      email: "mailto:bonthalamadhavi1@gmail.com",
+      email: "mailto:riteshbonthalakoti@gmail.com",
     },
   },
   footer: {

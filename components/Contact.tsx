@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Input, Textarea, Select, SelectItem } from "@heroui/react";
 import { useState } from "react";
-import { Github, Linkedin, Instagram, Mail, MapPin, Send, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Instagram, Mail, MapPin, Phone, Send, ExternalLink } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -17,11 +17,12 @@ import {
 import { siteConfig } from "@/data/config";
 
 const services = [
-  { label: "Web Development", value: "web-development" },
-  { label: "Mobile App Development", value: "mobile-app-development" },
-  { label: "UI/UX Design", value: "ui-ux-design" },
-  { label: "Consulting", value: "consulting" },
-  { label: "Code Review", value: "code-review" },
+  { label: "Embedded Systems Development", value: "embedded-systems" },
+  { label: "IoT Solution Design", value: "iot-solutions" },
+  { label: "AI / ML Integration", value: "ai-ml-integration" },
+  { label: "Full-Stack Web Development", value: "fullstack-web" },
+  { label: "Hardware Prototyping", value: "hardware-prototyping" },
+  { label: "Tech Consulting", value: "tech-consulting" },
   { label: "Other", value: "other" },
 ];
 
@@ -232,7 +233,7 @@ export const Contact = () => {
               {/* Contact Info Cards */}
               <div className="space-y-6 mb-8">
                 <a 
-                  href="mailto:bonthalamadhavi1@gmail.com?subject=Project Inquiry &body=Hi Ritesh,%0D%0A%0D%0AI'm interested in working with you on a project. Here are some details:%0D%0A%0D%0A[Describe your project here]%0D%0A%0D%0ABest regards,"
+                  href="mailto:riteshbonthalakoti@gmail.com?subject=Project Inquiry &body=Hi Ritesh,%0D%0A%0D%0AI'm interested in working with you on a project. Here are some details:%0D%0A%0D%0A[Describe your project here]%0D%0A%0D%0ABest regards,"
                   className="block group"
                 >
                   <Card className="bg-[#111111] border-white/5 overflow-hidden group-hover:border-primary/30 transition-all duration-300">
@@ -257,7 +258,7 @@ export const Contact = () => {
                           Direct Email
                         </h3>
                         <p className="text-sm sm:text-base md:text-lg font-bold font-grotesk text-white group-hover:text-primary transition-colors">
-                          bonthalamadhavi1@gmail.com
+                          riteshbonthalakoti@gmail.com
                         </p>
                       </div>
                     </CardContent>
@@ -297,6 +298,24 @@ export const Contact = () => {
                     </div>
                   </CardContent>
                 </Card>
+
+                <a href={`tel:${siteConfig.contact.phone}`} className="block group">
+                  <Card className="bg-[#111111] border-white/5 overflow-hidden group-hover:border-primary/30 transition-all duration-300">
+                    <CardContent className="flex items-center gap-4 p-6">
+                      <div className="p-3 rounded-xl bg-primary/10 flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <Phone className="w-6 h-6 text-primary" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/70 mb-1">
+                          Phone
+                        </h3>
+                        <p className="text-sm sm:text-base md:text-lg font-bold font-grotesk text-white group-hover:text-primary transition-colors">
+                          {siteConfig.contact.phone}
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
               </div>
 
               {/* Form */}

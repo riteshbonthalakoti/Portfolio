@@ -4,7 +4,7 @@ export const educationData = [
     school: "Sanketika Polytechnic College",
     period: "Aug 2023 – Apr 2026",
     description:
-      "Pursuing a comprehensive Diploma in ECE with focus on embedded systems, digital electronics, IoT, and computer science fundamentals. Simultaneously working on real-world AI and hardware projects.",
+      "Completed a Diploma in ECE with focus on embedded systems, digital electronics, IoT, and computer science fundamentals. Simultaneously built real-world AI and hardware projects — including award-winning prototypes recognised at district and department levels.",
     color: "bg-[#111111]",
     skills: [
       "Embedded Systems",
@@ -14,7 +14,7 @@ export const educationData = [
       "Verilog HDL",
       "C Programming",
     ],
-    progress: 85,
+    progress: 100,
     image: "/images/portfolio-project.jpeg",
   },
   {

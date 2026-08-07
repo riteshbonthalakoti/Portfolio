@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: "@soorya",
+    creator: "@riteshbonthalakoti",
   },
   icons: {
     icon: "/favicon.png",
@@ -121,9 +121,9 @@ export default function RootLayout({
                     name: "Diploma in Electronics & Communication Engineering",
                   },
                   sameAs: [
-                    "https://github.com/ritesh-1918",
-                    "https://linkedin.com/in/ritesh1908",
-                    "https://instagram.com/ritesh_19180",
+                    "https://github.com/riteshbonthalakoti",
+                    "https://linkedin.com/in/riteshbonthalakoti",
+                    "https://instagram.com/riteshbonthalakoti",
                     "https://ritesh1918.substack.com",
                   ],
                   address: {

@@ -63,7 +63,7 @@ export const GithubActivity = () => {
             <div className="min-w-[800px] md:min-w-0 flex justify-center min-h-[160px] items-center">
               {isMounted ? (
                 <GitHubCalendar
-                  username="ritesh-1918"
+                  username="riteshbonthalakoti"
                   blockSize={12}
                   blockMargin={5}
                   fontSize={14}
@@ -94,7 +94,7 @@ export const GithubActivity = () => {
               </div>
               
               <a 
-                href="https://github.com/ritesh-1918" 
+                href="https://github.com/riteshbonthalakoti" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-sm font-bold text-white hover:bg-white/10 hover:border-white/20 transition-all flex items-center gap-2 group"

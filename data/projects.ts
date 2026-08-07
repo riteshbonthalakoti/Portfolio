@@ -30,7 +30,7 @@ export const projects: Project[] = [
       "Vercel",
       "Hugging Face",
     ],
-    githubUrl: "https://github.com/ritesh-1918/HELPDESK.AI",
+    githubUrl: "https://github.com/riteshbonthalakoti/HELPDESK.AI",
     demoUrl: "https://helpdeskaiv1.vercel.app",
     screenshots: [
       "/images/landing.png",
@@ -49,8 +49,8 @@ export const projects: Project[] = [
     },
     youtubeId: "Bj00LzeMylM",
     links: {
-      presentation: "https://ritesh-1918.github.io/HELPDESK.AI/",
-      apk: "https://github.com/ritesh-1918/HELPDESK.AI/raw/main/MobileApp/application-2d277b36-4dbd-41c8-806d-cb2f19acf38a.apk"
+      presentation: "https://riteshbonthalakoti.github.io/HELPDESK.AI/",
+      apk: "https://github.com/riteshbonthalakoti/HELPDESK.AI/raw/main/MobileApp/application-2d277b36-4dbd-41c8-806d-cb2f19acf38a.apk"
     },
   },
   {
@@ -68,7 +68,7 @@ export const projects: Project[] = [
       "Cross-platform iOS and Android support",
     ],
     techStack: ["React Native", "Expo", "Node.js", "Supabase"],
-    githubUrl: "https://github.com/ritesh-1918",
+    githubUrl: "https://github.com/riteshbonthalakoti",
     demoUrl: "",
     screenshots: [
       "https://images.unsplash.com/photo-1678329885843-eeb5a6fcfce5?q=80&w=2428&auto=format&fit=crop",
@@ -83,7 +83,78 @@ export const projects: Project[] = [
     },
   },
 
+  {
+    slug: "focusmate",
+    title: "Focusmate – Daily Task Tracker",
+    description:
+      "Android productivity app for tracking daily tasks and building habits — helping users stay focused and accountable with a clean, minimal interface.",
+    image:
+      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2400&auto=format&fit=crop",
+    category: "Software Solutions",
+    features: [
+      "Daily task creation and management",
+      "Habit tracking with streak counters",
+      "Priority-based task organisation",
+      "Local notifications for task reminders",
+      "Progress visualisation with daily/weekly stats",
+      "Offline-first architecture with local persistence",
+      "Clean minimal UI with dark mode support",
+      "MVVM architecture for maintainability",
+    ],
+    techStack: ["Android", "Kotlin", "XML Layouts", "Room Database", "WorkManager"],
+    githubUrl: "https://github.com/riteshbonthalakoti",
+    demoUrl: "",
+    screenshots: [
+      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2400&auto=format&fit=crop",
+    ],
+    content: {
+      overview:
+        "Focusmate is an Android productivity application that helps users track their daily tasks and build consistent habits. Built with a focus on simplicity, it provides task management, habit streaks, and progress visualisation to keep users accountable and motivated throughout the day.",
+      challenges:
+        "Designing an intuitive UX that remains simple without sacrificing feature completeness, and ensuring reliable local notifications across different Android versions.",
+      solutions:
+        "Used Android WorkManager for reliable background task scheduling and implemented a clean MVVM architecture with Room Database for persistent local storage that works fully offline.",
+      results:
+        "A fully functional Android application that helps users manage their daily workload and track long-term habit formation without requiring internet connectivity.",
+    },
+  },
+
   // ─── HARDWARE / IoT PROJECTS ──────────────────────────────────
+  {
+    slug: "dhwanix",
+    title: "Dhwanix – Noise Pollution Monitor",
+    description:
+      "IoT-based real-time noise pollution monitoring system for hospitals and schools — measuring decibel levels with threshold alerts to protect quiet-zone environments.",
+    image:
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2400&auto=format&fit=crop",
+    category: "Hardware Solutions",
+    features: [
+      "Real-time decibel level measurement via sound sensor",
+      "Configurable threshold-based alert system",
+      "I2C LCD display for on-site noise level readout",
+      "Buzzer and LED feedback for threshold violations",
+      "Wi-Fi data logging for trend analysis",
+      "Moving-average filtering to ignore transient spikes",
+      "Compact, portable enclosure for quick deployment",
+      "Designed for hospitals, schools, and libraries",
+    ],
+    techStack: ["ESP32", "Sound Sensor Module", "Embedded C", "MQTT", "Arduino IDE", "I2C LCD"],
+    githubUrl: "https://github.com/riteshbonthalakoti",
+    demoUrl: "",
+    screenshots: [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2400&auto=format&fit=crop",
+    ],
+    content: {
+      overview:
+        "Dhwanix is an IoT-based noise pollution monitoring system designed for sound-sensitive environments like hospitals and schools. It measures ambient decibel levels in real-time using a calibrated sound sensor connected to an ESP32, triggers alerts when levels exceed defined thresholds, and logs data for historical noise trend analysis.",
+      challenges:
+        "Accurately distinguishing transient noise spikes from sustained noise violations, and calibrating the sensor for different environmental acoustic profiles.",
+      solutions:
+        "Implemented a moving-average algorithm on the ESP32 firmware to filter transient spikes, with configurable threshold levels and an MQTT pipeline for remote monitoring.",
+      results:
+        "Deployed as a working prototype demonstrating real-time noise monitoring with alert capabilities for quiet-zone enforcement in educational and medical environments.",
+    },
+  },
   {
     slug: "shem",
     title: "SHEM – Smart Home Energy Manager",
@@ -113,7 +184,7 @@ export const projects: Project[] = [
       "Blynk 2.0",
       "PostgreSQL",
     ],
-    githubUrl: "https://github.com/ritesh-1918/SHEM",
+    githubUrl: "https://github.com/riteshbonthalakoti/SHEM",
     demoUrl: "https://shem1918.vercel.app/",
     screenshots: [
       "/images/shem/main-thumbnail.jpg",
@@ -159,7 +230,7 @@ export const projects: Project[] = [
       "I2C LCD",
       "Buzzer Module",
     ],
-    githubUrl: "https://github.com/ritesh-1918/RaceXplorer",
+    githubUrl: "https://github.com/riteshbonthalakoti/RaceXplorer",
     demoUrl: "",
     screenshots: [
       "/images/racexplorer/device-top.png",
@@ -196,7 +267,7 @@ export const projects: Project[] = [
       "MQTT-based messaging protocol",
     ],
     techStack: ["ESP8266", "Embedded C", "MQTT", "Arduino IDE", "Python"],
-    githubUrl: "https://github.com/ritesh-1918",
+    githubUrl: "https://github.com/riteshbonthalakoti",
     demoUrl: "",
     screenshots: [
       "https://images.unsplash.com/photo-1674027392842-29f8354e236c?q=80&w=2232&auto=format&fit=crop",
@@ -229,7 +300,7 @@ export const projects: Project[] = [
       "LCD display for user prompts",
     ],
     techStack: ["Arduino", "Embedded C", "Servo Motor", "LCD", "Keypad"],
-    githubUrl: "https://github.com/ritesh-1918",
+    githubUrl: "https://github.com/riteshbonthalakoti",
     demoUrl: "",
     screenshots: [
       "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2832&auto=format&fit=crop",
