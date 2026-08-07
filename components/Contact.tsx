@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Input, Textarea, Select, SelectItem } from "@heroui/react";
 import { useState } from "react";
-import { Github, Linkedin, Instagram, Mail, MapPin, Send, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Instagram, Mail, MapPin, Phone, Send, ExternalLink } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -297,6 +297,24 @@ export const Contact = () => {
                     </div>
                   </CardContent>
                 </Card>
+
+                <a href={`tel:${siteConfig.contact.phone}`} className="block group">
+                  <Card className="bg-[#111111] border-white/5 overflow-hidden group-hover:border-primary/30 transition-all duration-300">
+                    <CardContent className="flex items-center gap-4 p-6">
+                      <div className="p-3 rounded-xl bg-primary/10 flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <Phone className="w-6 h-6 text-primary" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/70 mb-1">
+                          Phone
+                        </h3>
+                        <p className="text-sm sm:text-base md:text-lg font-bold font-grotesk text-white group-hover:text-primary transition-colors">
+                          {siteConfig.contact.phone}
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
               </div>
 
               {/* Form */}

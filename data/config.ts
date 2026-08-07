@@ -130,6 +130,7 @@ export const siteConfig = {
     description:
       "Have a project in mind? Let's build something remarkable together.",
     cta: "Send Message",
+    phone: "+91 84649 31322",
     socialLinks: {
       github: "https://github.com/riteshbonthalakoti",
       instagram: "https://instagram.com/riteshbonthalakoti",
