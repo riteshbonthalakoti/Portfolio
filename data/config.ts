@@ -81,7 +81,7 @@ export const siteConfig = {
     ],
     quickInfo: [
       { label: "Location", value: "Visakhapatnam, India" },
-      { label: "Currently", value: "Diploma in ECE (Completed, 2026)" },
+      { label: "Currently", value: "B.Tech ECE 2nd Year — Alwar College of Engineering" },
       { label: "Goal", value: "Semiconductor Industry (Nvidia/AMD/Intel)" },
       { label: "Availability", value: "Open to Work" },
     ],

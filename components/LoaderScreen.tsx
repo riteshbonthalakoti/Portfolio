@@ -54,19 +54,19 @@ export const LoaderScreen = ({ onLoadingComplete }: LoaderScreenProps) => {
 
     const contentFadeTimer = setTimeout(() => {
       setShowContent(false);
-    }, 2800);
+    }, 1000);
 
     const loadingTimer = setTimeout(() => {
       setIsLoading(false);
       if (onLoadingComplete) {
         onLoadingComplete();
       }
-    }, 3200);
+    }, 1300);
 
     const cleanupTimer = setTimeout(() => {
       setIsFullyRemoved(true);
       document.body.style.overflow = "";
-    }, 3700);
+    }, 1700);
 
     return () => {
       clearInterval(textInterval);

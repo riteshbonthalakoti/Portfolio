@@ -12,7 +12,6 @@ interface CustomCursorProps {
 export const CustomCursor = ({ className }: CustomCursorProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isPointer, setIsPointer] = useState(false);
-  const [isText, setIsText] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
@@ -32,52 +31,22 @@ export const CustomCursor = ({ className }: CustomCursorProps) => {
     const handleMouseEnter = () => setIsVisible(true);
     const handleMouseLeave = () => setIsVisible(false);
 
-    const handlePointerElements = () => {
-      const buttons = document.querySelectorAll(
-        'button, a, input, textarea, [role="button"], [role="link"]',
-      );
-      const textElements = document.querySelectorAll(
-        "p, h1, h2, h3, h4, h5, h6, span",
-      );
-
-      const handleButtonEnter = () => setIsPointer(true);
-      const handleButtonLeave = () => setIsPointer(false);
-      const handleTextEnter = () => setIsText(true);
-      const handleTextLeave = () => setIsText(false);
-
-      buttons.forEach((el) => {
-        el.addEventListener("mouseenter", handleButtonEnter);
-        el.addEventListener("mouseleave", handleButtonLeave);
-      });
-
-      textElements.forEach((el) => {
-        el.addEventListener("mouseenter", handleTextEnter);
-        el.addEventListener("mouseleave", handleTextLeave);
-      });
-
-      return () => {
-        buttons.forEach((el) => {
-          el.removeEventListener("mouseenter", handleButtonEnter);
-          el.removeEventListener("mouseleave", handleButtonLeave);
-        });
-        textElements.forEach((el) => {
-          el.removeEventListener("mouseenter", handleTextEnter);
-          el.removeEventListener("mouseleave", handleTextLeave);
-        });
-      };
+    const handleMouseOver = (e: MouseEvent) => {
+      const target = e.target as Element;
+      const isClickable = target.closest('button, a, input, textarea, [role="button"], [role="link"]');
+      setIsPointer(!!isClickable);
     };
 
     document.addEventListener("mousemove", moveCursor);
     document.addEventListener("mouseenter", handleMouseEnter);
     document.addEventListener("mouseleave", handleMouseLeave);
-
-    const cleanup = handlePointerElements();
+    document.addEventListener("mouseover", handleMouseOver);
 
     return () => {
       document.removeEventListener("mousemove", moveCursor);
       document.removeEventListener("mouseenter", handleMouseEnter);
       document.removeEventListener("mouseleave", handleMouseLeave);
-      cleanup();
+      document.removeEventListener("mouseover", handleMouseOver);
     };
   }, [cursorX, cursorY]);
 
@@ -103,7 +72,7 @@ export const CustomCursor = ({ className }: CustomCursorProps) => {
           {/* Main cursor */}
           <motion.div
             animate={{
-              scale: isPointer ? 2 : isText ? 0.5 : 1,
+              scale: isPointer ? 2 : 1,
               opacity: isPointer ? 0.5 : 1,
             }}
             className="w-8 h-8 bg-white rounded-full"
@@ -118,34 +87,16 @@ export const CustomCursor = ({ className }: CustomCursorProps) => {
           {/* Outer ring */}
           <motion.div
             animate={{
-              scale: isPointer ? 1.5 : isText ? 2 : [1, 1.2, 1],
-              opacity: isPointer ? 0.2 : isText ? 0.1 : 0.3,
+              scale: isPointer ? 1.5 : [1, 1.2, 1],
+              opacity: isPointer ? 0.2 : 0.3,
             }}
             className="absolute inset-0 border border-white rounded-full"
             transition={
-              isPointer || isText
+              isPointer
                 ? { type: "spring", damping: 20, stiffness: 200, mass: 0.5 }
                 : { duration: 2, repeat: Infinity }
             }
           />
-
-          {/* Additional ring for text */}
-          {isText && (
-            <motion.div
-              animate={{
-                scale: 2.5,
-                opacity: 0.05,
-              }}
-              className="absolute inset-0 border border-white rounded-full"
-              initial={{ scale: 1, opacity: 0 }}
-              transition={{
-                type: "spring",
-                damping: 20,
-                stiffness: 200,
-                mass: 0.5,
-              }}
-            />
-          )}
         </div>
       </motion.div>
 

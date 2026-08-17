@@ -1,18 +1,12 @@
 "use client";
 
-import { useRef } from "react";
-import { motion, useScroll } from "framer-motion";
-import { Card, CardBody, Chip, Progress } from "@heroui/react";
+import { motion } from "framer-motion";
+import { Card, CardBody, Chip } from "@heroui/react";
 
 import { experienceData } from "@/data/experience";
 import { siteConfig } from "@/data/config";
 
 export const Experience = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const {} = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"],
-  });
 
   return (
     <section
@@ -57,13 +51,13 @@ export const Experience = () => {
           {experienceData.map((exp, index) => (
             <motion.div
               key={exp.company}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
+              initial={{ opacity: 0, y: 24 }}
+              transition={{ duration: 0.4, delay: index * 0.07 }}
               viewport={{ once: true }}
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
             >
               <Card
-                className={`${exp.color} border border-white/5 hover:border-primary/20 transition-all duration-300 backdrop-blur-sm shadow-2xl`}
+                className={`${exp.color} border border-white/5 hover:border-primary/20 transition-all duration-300 shadow-2xl`}
                 style={{
                   boxShadow: "0 0 40px rgba(0, 0, 0, 0.5)",
                 }}
@@ -110,13 +104,9 @@ export const Experience = () => {
 
                       <ul className="space-y-4">
                         {exp.achievements.map((achievement, i) => (
-                          <motion.li
+                          <li
                             key={i}
                             className="flex items-start gap-3"
-                            initial={{ opacity: 0, x: 20 }}
-                            transition={{ delay: i * 0.1 }}
-                            viewport={{ once: true }}
-                            whileInView={{ opacity: 1, x: 0 }}
                           >
                             <span className="mt-1.5">
                               <svg
@@ -134,7 +124,7 @@ export const Experience = () => {
                               </svg>
                             </span>
                             <span className="text-white/70">{achievement}</span>
-                          </motion.li>
+                          </li>
                         ))}
                       </ul>
                     </div>
