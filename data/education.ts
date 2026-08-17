@@ -1,5 +1,23 @@
 export const educationData = [
   {
+    degree: "B.Tech in Electronics & Communication Engineering (Lateral Entry)",
+    school: "Alwar College of Engineering",
+    period: "2026 – 2029",
+    description:
+      "Pursuing a B.Tech in ECE via Lateral Entry (2nd year) at Alwar College of Engineering, Visakhapatnam. Building on a strong Diploma foundation with advanced coursework in VLSI, signal processing, embedded system design, and communication networks.",
+    color: "bg-[#0d0d0d]",
+    skills: [
+      "VLSI Design",
+      "Signal Processing",
+      "Communication Networks",
+      "Embedded System Design",
+      "Digital Systems",
+      "Control Systems",
+    ],
+    progress: 15,
+    image: "/images/portfolio-project.jpeg",
+  },
+  {
     degree: "Diploma in Electronics & Communication Engineering",
     school: "Sanketika Polytechnic College",
     period: "Aug 2023 – Apr 2026",
