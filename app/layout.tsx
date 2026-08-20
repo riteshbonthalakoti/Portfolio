@@ -83,49 +83,24 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": "WebSite",
-                  "@id": "https://riteshbonthalakoti.vercel.app/#website",
-                  url: "https://riteshbonthalakoti.vercel.app",
-                  name: "Ritesh Bonthalakoti | Portfolio",
-                  description:
-                    "Electronics & Communication Engineering student building at the intersection of AI, embedded hardware, and full-stack development.",
+                  "@id": `${siteConfig.url}/#website`,
+                  url: siteConfig.url,
+                  name: siteConfig.title,
+                  description: siteConfig.description,
                   publisher: {
-                    "@id":
-                      "https://riteshbonthalakoti.vercel.app/#person",
+                    "@id": `${siteConfig.url}/#person`,
                   },
                 },
                 {
                   "@type": "Person",
-                  "@id": "https://riteshbonthalakoti.vercel.app/#person",
-                  name: "Ritesh Bonthalakoti",
-                  url: "https://riteshbonthalakoti.vercel.app",
-                  image:
-                    "https://riteshbonthalakoti.vercel.app/images/headshot-ritesh.png",
-                  jobTitle:
-                    "AI & Embedded Systems Engineer | Entrepreneur",
-                  description:
-                    "Electronics & Communication Engineering student from Visakhapatnam, India. Building at the intersection of AI, embedded hardware, and full-stack development. Co-founder of startups, hackathon leader, and collaborator with IIT Bombay, Infosys, and PUSULA International.",
-                  knowsAbout: [
-                    "Artificial Intelligence",
-                    "Machine Learning",
-                    "Embedded Systems",
-                    "ESP32",
-                    "IoT",
-                    "Full-Stack Development",
-                    "React",
-                    "Next.js",
-                    "Python",
-                    "Entrepreneurship",
-                  ],
-                  alumniOf: {
-                    "@type": "EducationalOrganization",
-                    name: "Diploma in Electronics & Communication Engineering",
-                  },
-                  sameAs: [
-                    "https://github.com/riteshbonthalakoti",
-                    "https://linkedin.com/in/riteshbonthalakoti",
-                    "https://instagram.com/riteshbonthalakoti",
-                    "https://ritesh1918.substack.com",
-                  ],
+                  "@id": `${siteConfig.url}/#person`,
+                  name: siteConfig.name,
+                  url: siteConfig.url,
+                  image: `${siteConfig.url}${siteConfig.about.image.src}`,
+                  jobTitle: siteConfig.about.title,
+                  description: siteConfig.description,
+                  knowsAbout: siteConfig.keywords,
+                  sameAs: Object.values(siteConfig.socials).filter((link) => link.startsWith("http")),
                   address: {
                     "@type": "PostalAddress",
                     addressLocality: "Visakhapatnam",

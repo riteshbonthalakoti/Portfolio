@@ -44,7 +44,113 @@ interface Product {
   demoUrl: string;
   previewImages: string[];
 }
-const products: Product[] = [];
+const products: Product[] = [
+  {
+    id: "edge-ai-esp32-starter",
+    title: "Edge AI & ESP32 Smart IoT Starter Kit",
+    description: "Complete firmware, edge model training scripts, and real-time telemetry dashboard for ESP32 microcontrollers.",
+    price: 49,
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop&q=80",
+    category: "Hardware & IoT",
+    features: [
+      "Real-time sensor data streaming via MQTT & WebSockets",
+      "Edge TinyML model deployment pipeline for ESP32",
+      "Over-the-Air (OTA) firmware updating framework",
+      "Responsive React monitoring dashboard included"
+    ],
+    techStack: ["ESP32", "FreeRTOS", "MQTT", "Python", "TensorFlow Lite"],
+    rating: 4.9,
+    sales: 142,
+    author: {
+      name: "Ritesh Bonthalakoti",
+      image: "/images/avatar-ritesh.jpg",
+      role: "AI & Embedded Systems Engineer"
+    },
+    demoUrl: "https://github.com/riteshbonthalakoti",
+    previewImages: [
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    id: "nextjs-portfolio-starter",
+    title: "Next.js 16 Developer Portfolio & Marketplace Template",
+    description: "Ultra-fast Next.js 16 App Router portfolio boilerplate with dark theme aesthetics, marketplace purchase flow, and automated SEO pipeline.",
+    price: 29,
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=80",
+    category: "Templates",
+    features: [
+      "Next.js 16 App Router & React 19 Server Components",
+      "Dynamic JSON-LD SEO structured data pipeline",
+      "Built-in digital marketplace checkout & modal flow",
+      "Customizable Tailwind CSS design system with Framer Motion"
+    ],
+    techStack: ["Next.js 16", "React 19", "Tailwind CSS", "Framer Motion", "TypeScript"],
+    rating: 4.95,
+    sales: 289,
+    author: {
+      name: "Ritesh Bonthalakoti",
+      image: "/images/avatar-ritesh.jpg",
+      role: "Full Stack Architect"
+    },
+    demoUrl: "https://riteshbonthalakoti.vercel.app",
+    previewImages: [
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    id: "smart-energy-dashboard",
+    title: "Smart Energy & IoT Analytics Platform",
+    description: "Full-stack web application for monitoring solar micro-grids, IoT energy meters, and AI-powered load forecasting.",
+    price: 79,
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80",
+    category: "Full-Stack Apps",
+    features: [
+      "Interactive time-series charts for voltage & load analytics",
+      "Anomaly detection algorithms for hardware failure alerts",
+      "Multi-tenant user authentication and role management",
+      "Automated PDF monthly generation and email alerts"
+    ],
+    techStack: ["React", "Next.js", "Chart.js", "Node.js", "PostgreSQL"],
+    rating: 4.85,
+    sales: 98,
+    author: {
+      name: "Ritesh Bonthalakoti",
+      image: "/images/avatar-ritesh.jpg",
+      role: "Hardware & Software Lead"
+    },
+    demoUrl: "https://github.com/riteshbonthalakoti",
+    previewImages: [
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80"
+    ]
+  },
+  {
+    id: "embedded-serial-sdk",
+    title: "Embedded Hardware Serial Protocol SDK",
+    description: "High-performance zero-heap C++ library for UART, SPI, and CAN Bus packet serialization on microcontrollers.",
+    price: 39,
+    image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&auto=format&fit=crop&q=80",
+    category: "Developer Tools",
+    features: [
+      "Zero dynamic memory allocation for ultra-reliable embedded operation",
+      "Automated CRC16/CRC32 checksum validation",
+      "Ring buffer memory management for high baud rate UART",
+      "Includes Python CLI diagnostic monitor tool"
+    ],
+    techStack: ["C++", "Embedded C", "UART", "SPI", "CAN Bus"],
+    rating: 5.0,
+    sales: 64,
+    author: {
+      name: "Ritesh Bonthalakoti",
+      image: "/images/avatar-ritesh.jpg",
+      role: "Embedded Systems Specialist"
+    },
+    demoUrl: "https://github.com/riteshbonthalakoti",
+    previewImages: [
+      "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&auto=format&fit=crop&q=80"
+    ]
+  }
+];
 
 interface PreviewModalProps {
   isOpen: boolean;
