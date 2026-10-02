@@ -30,4 +30,5 @@ yarn-error.log*
 # cloudflare / opennext
 .open-next/
 .wrangler/
+scratch/
 

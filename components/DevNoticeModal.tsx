@@ -69,16 +69,16 @@ export const DevNoticeModal = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
               </span>
-              ACTIVE STAGING • BUILD PREVIEW
+              LIVE UPDATES • PORTFOLIO PREVIEW
             </div>
 
             {/* Heading & Content */}
             <div className="space-y-2 mb-6">
               <h3 className="text-xl font-bold font-grotesk tracking-tight text-white">
-                Development Environment
+                Welcome to My Portfolio
               </h3>
-              <p className="text-xs text-neutral-400 leading-relaxed font-sans">
-                This platform is undergoing active iteration. Modules, project assets, and API integrations are continuously deployed.
+              <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-sans">
+                I am actively adding new AI &amp; hardware projects, live demos, and fresh updates to this site. Feel free to explore while features are continuously being refined!
               </p>
             </div>
 
@@ -86,16 +86,16 @@ export const DevNoticeModal = () => {
             <div className="flex items-center gap-3 pt-2">
               <button
                 onClick={handleClose}
-                className="flex-1 bg-white/10 hover:bg-white/20 active:scale-[0.98] text-white font-mono text-xs py-2.5 px-4 rounded-xl border border-white/20 backdrop-blur-xl shadow-lg transition-all text-center"
+                className="flex-1 bg-white/10 hover:bg-white/20 active:scale-[0.98] text-white font-mono text-xs py-2.5 px-4 rounded-xl border border-white/20 backdrop-blur-xl shadow-lg transition-all text-center font-medium"
               >
-                Proceed to Site
+                Explore Portfolio
               </button>
 
               <button
                 onClick={handleClose}
                 className="bg-transparent hover:bg-white/5 active:scale-[0.98] text-neutral-400 hover:text-white font-mono text-xs py-2.5 px-4 rounded-xl border border-white/10 transition-all text-center"
               >
-                Dismiss
+                Got it
               </button>
             </div>
           </motion.div>
