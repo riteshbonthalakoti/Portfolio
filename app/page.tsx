@@ -9,7 +9,7 @@ import { Contact } from "@/components/Contact";
 import { Education } from "@/components/Education";
 import { Experience } from "@/components/Experience";
 import { Testimonials } from "@/components/Testimonials";
-import { Services } from "@/components/Services";
+
 import { Certificates } from "@/components/Certificates";
 import { GithubActivity } from "@/components/GithubActivity";
 import { ScrollNavigation } from "@/components/ScrollNavigation";
@@ -25,7 +25,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <GithubActivity />
-      <Services />
+
       <Certificates />
       <Education />
       <Testimonials />

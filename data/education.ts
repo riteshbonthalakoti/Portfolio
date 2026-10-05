@@ -7,12 +7,7 @@ export const educationData = [
       "Pursuing a B.Tech in ECE via Lateral Entry (2nd year) at Alwar College of Engineering, Visakhapatnam. Building on a strong Diploma foundation with advanced coursework in VLSI, signal processing, embedded system design, and communication networks.",
     color: "bg-[#0d0d0d]",
     skills: [
-      "VLSI Design",
-      "Signal Processing",
-      "Communication Networks",
-      "Embedded System Design",
-      "Digital Systems",
-      "Control Systems",
+      "Nothing"
     ],
     progress: 15,
     image: "/images/portfolio-project.jpeg",
@@ -25,12 +20,7 @@ export const educationData = [
       "Completed a Diploma in ECE with focus on embedded systems, digital electronics, IoT, and computer science fundamentals. Simultaneously built real-world AI and hardware projects — including award-winning prototypes recognised at district and department levels.",
     color: "bg-[#111111]",
     skills: [
-      "Embedded Systems",
-      "Digital Electronics",
-      "IoT",
-      "PCB Design",
-      "Verilog HDL",
-      "C Programming",
+      "How To Handle HOD's and Somehow Learned How to Communicate infront of the entire Class"
     ],
     progress: 100,
     image: "/images/portfolio-project.jpeg",
