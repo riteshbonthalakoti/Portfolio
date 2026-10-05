@@ -10,7 +10,7 @@ export const DevNoticeModal = () => {
   useEffect(() => {
     // Show only once per browser session (shows on reopen/new visit, hides on internal refresh)
     const dismissed = sessionStorage.getItem("devNoticeDismissed");
-    
+
     if (!dismissed) {
       const timer = setTimeout(() => {
         setIsOpen(true);
@@ -49,7 +49,7 @@ export const DevNoticeModal = () => {
           >
             {/* Top Glass Shimmer Line */}
             <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent" />
-            
+
             {/* Ambient Corner Glow */}
             <div className="pointer-events-none absolute -top-20 -right-20 w-44 h-44 bg-blue-500/10 blur-[60px] rounded-full" />
             <div className="pointer-events-none absolute -bottom-20 -left-20 w-44 h-44 bg-emerald-500/10 blur-[60px] rounded-full" />
@@ -69,7 +69,7 @@ export const DevNoticeModal = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
               </span>
-              LIVE UPDATES • PORTFOLIO PREVIEW
+              PORTFOLIO PREVIEW
             </div>
 
             {/* Heading & Content */}
@@ -78,7 +78,7 @@ export const DevNoticeModal = () => {
                 Welcome to My Portfolio
               </h3>
               <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-sans">
-                I am actively adding new AI &amp; hardware projects, live demos, and fresh updates to this site. Feel free to explore while features are continuously being refined!
+                I'M  projects and This Portfolio is under development. Feel free to explore while features are continuously being refined!
               </p>
             </div>
 
